@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2021-01-18T06:30:00.000000Z"
+        "updated_at": "2021-04-24T13:51:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -177,6 +177,7 @@
                 "style_word_label": "Word 風格 (不需按下 空白鍵 或 Enter 而立即替換)",
                 "title": "自動校正"
             },
+            "avoid_new_tabs": "避免將檔案開啟至新分頁",
             "checkForBeta": "提醒我 Beta 版的更新",
             "choose_file": "選擇檔案 \u2026",
             "citation_database": "引用來源資料庫（CSL JSON 或 BibTex）",
@@ -519,6 +520,7 @@
         "print": "列印\u2026",
         "project_build": "輸出專案",
         "project_properties": "專案設定\u2026",
+        "properties": "詳細資訊",
         "quicklook": "快速檢視",
         "quit": "關閉程式",
         "recent_docs": "最近的文件",

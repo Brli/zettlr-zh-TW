@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2021-04-24T13:51:00.000000Z"
+        "updated_at": "2021-06-24T01:49:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -208,6 +208,7 @@
                 "rtl_move_visually": "在從右至左書寫模式中使用符合視覺的移動箭頭方向"
             },
             "enable_rmarkdown": "開啟 RMarkdown 檔案支援",
+            "enable_scroll_zoom": "按住 \u003Ckbd\u003ECmd\u003C/kbd\u003E or \u003Ckbd\u003ECtrl\u003C/kbd\u003E 並利用滑鼠捲動以縮放",
             "enable_table_helper": "啟用表格編輯器",
             "export": {
                 "dest": "匯出檔案的目標資料夾。 \u003Cem\u003E警告：\u003C/em\u003E選擇目前的工作資料夾將無預警的取代檔案！",
@@ -469,6 +470,7 @@
         "copy_filename": "複製檔案名稱",
         "copy_html": "以 HTML 模式複製",
         "copy_id": "複製 ID",
+        "copy_img_to_clipboard": "複製圖片到剪貼簿",
         "copy_link": "複製超連結",
         "copy_mail": "複製電子郵件地址",
         "custom_css": "自訂 CSS\u2026",
@@ -509,8 +511,10 @@
         "no_suggestions": "無意見",
         "open": "開啟\u2026",
         "open_attachment": "開啟附加檔案",
+        "open_in_browser": "在瀏覽器中開啟",
         "open_link": "開啟超連結",
         "open_logs": "開啟紀錄檔",
+        "open_new_tab": "以新分頁開啟",
         "open_workspace": "開啟 Workspace \u2026",
         "pandoc": "取得 Pandoc",
         "paste": "貼上",

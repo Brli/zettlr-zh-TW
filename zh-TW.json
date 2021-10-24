@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2021-06-24T01:49:00.000000Z"
+        "updated_at": "2021-10-25T00:11:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -34,11 +34,18 @@
             "cancel": "取消",
             "choose_path": "選擇資料夾路徑 \u2026",
             "close": "關閉",
+            "close_without_saving": "關閉並放棄變更",
             "save": "儲存"
         },
         "custom_css": {
             "info": "您可以在此客製化自己的 Zettlr 外觀主題 \u003Cstrong\u003E警告：這個檔案將取代所有的 CSS 指令！請勿改變元素的版型，否則可能會導致非預期的程式行為！\u003C/strong\u003E",
             "title": "自訂 CSS"
+        },
+        "defaults": {
+            "explanation": "在此處編輯匯入/匯出的預設設定",
+            "exporting_title": "匯出",
+            "importing_title": "匯入",
+            "restore": "復原成初始設定"
         },
         "dir_new": {
             "placeholder": "資料夾名稱",
@@ -67,10 +74,13 @@
         },
         "filter_tags": "標籤篩選\u2026",
         "find": {
+            "close_label": "關閉搜尋",
             "find_label": "搜尋",
             "find_placeholder": "搜尋\u2026",
-            "replace_all_label": "所有標籤",
+            "regex_label": "開啟/關閉正則表達式搜尋",
+            "replace_all_label": "取代所有吻合的結果",
             "replace_label": "取代標籤",
+            "replace_next_label": "取代下一個吻合的結果",
             "replace_placeholder": "以\u2026 取代"
         },
         "paste_image": {
@@ -165,6 +175,12 @@
             "auto_dark_mode_schedule": "自訂時程",
             "auto_dark_mode_schedule_format": "HH:MM (24 小時制)",
             "auto_dark_mode_system": "隨系統時間判斷",
+            "auto_save": {
+                "delayed": "停頓一下之後",
+                "immediately": "立刻",
+                "label": "自動儲存",
+                "off": "關閉"
+            },
             "autocomplete_accept_space": "自動補完時接受空白",
             "autocorrect": {
                 "active_label": "開啟自動校正",
@@ -181,13 +197,16 @@
             "checkForBeta": "提醒我 Beta 版的更新",
             "choose_file": "選擇檔案 \u2026",
             "citation_database": "引用來源資料庫（CSL JSON 或 BibTex）",
+            "cite_style_label": "自動補完插入引用時的格式",
             "count_chars": "統計字數而不是詞數（例：中文）",
             "creationtime": "檔案建立時間",
             "debug": "開啟除錯模式",
             "default_image_save_path": "預設的圖片路徑（相對路徑或絕對路徑）",
             "delete_on_fail": "無法移到資源回收桶時，直接不可逆的刪除檔案",
             "display": {
+                "image_height": "最大高度（百分比）",
                 "image_size_info": "透過操作下方捲軸設定預覽圖的大小",
+                "image_width": "最大寬度（百分比）",
                 "preview_info": "勾選以下選項決定哪些元素將在文件內被顯示",
                 "render_citations": "顯示引用段落",
                 "render_htags": "隱藏標題控制字元(#)",
@@ -235,6 +254,7 @@
             "homeEndBehaviour": "按 CodeMirror 預設行為來使用 \u003Ckbd\u003EHome\u003C/kbd\u003E and \u003Ckbd\u003E 和 End\u003C/kbd\u003E。",
             "indent_unit": "使用這個數目的空格來縮排：",
             "input_mode": "編輯器輸入模式",
+            "leave_app_running_in_the_notification_area": "讓軟體在通知區域常駐",
             "modtime": "最後修改時間",
             "mute_lines": "在專注模式中淡化非注目行",
             "new_file_dont_prompt": "新增檔案時不詢問檔案名稱",
@@ -286,11 +306,15 @@
             "project": {
                 "csl_style": "CSL 風格（非必要）",
                 "format": "匯出專案至：",
+                "name_label": "格式",
+                "pattern": "新增全域規則以僅包含特定檔案",
+                "pattern_name": "全域規則",
                 "title": "專案設定",
                 "title_label": "專案標題"
             },
             "readability_algorithm": "閱讀輔助器使用的演算法",
             "reset_pandoc_command": "重設 pandoc 指令",
+            "show_app_in_the_notification_area": "在通知區域中顯示",
             "sorting_ascii": "ASCII 排序（2在10之後）",
             "sorting_explanation": "檔案的排列順序（用於按名稱排序）",
             "sorting_natural": "自然排序（10在2之後）",
@@ -302,7 +326,11 @@
                 "title": "拼寫校正"
             },
             "theme": {
+                "accent_color_info": "本設定僅適用於視窗與麥金塔作業系統",
+                "accent_color_label": "Use the operating system's accent color instead of the theme color",
                 "info": "在此選擇應用程式的佈景主題",
+                "select_label": "點選",
+                "selected_label": "已選取",
                 "title": "佈景主題"
             },
             "title": "偏好設定",
@@ -316,9 +344,12 @@
             },
             "use_native_appearance": "使用原生視窗外觀",
             "user_dictionary": "使用者造詞。點選單詞以移除之",
+            "user_dictionary_label": "字典",
             "watchdog_checkbox_label": "啟用輪詢即時監視",
             "watchdog_explainer": "當 Zettlr 誤報大量的遠端檔案已修改警告時請試著開啟這個選項",
             "watchdog_threshold_label": "認定檔案已經寫入完成的延遲時間（毫秒）",
+            "whitelist": "iFrame 白名單",
+            "whitelist_hostname": "主機名稱",
             "xelatex": "xelatex 執行檔所在位置。請僅在 Zettlr 找不到時再修改。",
             "xelatex_default": "預設值：xelatex",
             "zkn": {
@@ -353,12 +384,22 @@
                 "var_year_two": "年 (YY 西元末兩位)"
             }
         },
+        "snippets": {
+            "explanation": "使用自訂的變數名稱快速再利用文字段落",
+            "rename": "重新命名便利貼",
+            "title": "便利貼"
+        },
         "statistics": {
             "compare": "與之前的時間表比較",
             "day": "日期",
             "intro": "您的寫作習慣統計數據，例如每日字數的詳細圖表。",
             "month": "月份",
             "previous_frame": "上一個時間表",
+            "tabs": {
+                "calendar_label": "行事曆",
+                "chart_label": "表格",
+                "fsal_label": "FSAL 統計"
+            },
             "this_frame": "目前時間表",
             "title": "寫作統計",
             "week": "週數",
@@ -367,8 +408,10 @@
             "year": "年份"
         },
         "tag_cloud": {
+            "add_to_file": "新增至檔案",
             "copy": "複製到剪貼簿",
             "info": "使用過的所有標籤。亦可以把整個列表複製到剪貼簿。將滑鼠移到標籤上即可顯示它們的使用次數。",
+            "suggestions_label": "目前檔案的建議標籤",
             "title": "標籤雲"
         },
         "tags": {
@@ -387,22 +430,47 @@
             "client_error": "無法檢查更新：客戶端錯誤（錯誤碼：%s）",
             "connection_error": "無法檢查更新：無法建立連線",
             "current_version": "目前版本",
+            "download_progress_label": "正在下載更新",
+            "new_update_available": "新版號 %s 已上線！",
             "no_data": "無法檢查更新：伺服器未發送任何數據",
+            "no_new_update": "尚無更新，您的版本是最新的。",
             "notification": "已有新版 Zettlr。請閱讀以下的開發日誌。",
+            "other_error": "無法檢查更新 %s: %s",
             "redirect_error": "無法檢查更新：伺服器嘗試重定向（錯誤碼：%s）",
             "release_url": "前往下載頁面",
             "server_error": "無法檢查更新：伺服器錯誤（狀態代碼：%s）",
+            "start_update_label": "按此開始更新",
+            "start_update_message": "正在開始更新 \u2026",
             "title": "已有可用更新",
-            "transmission_error": "無法檢查更新：連線中斷"
+            "transmission_error": "無法檢查更新：連線中斷",
+            "window_title": "更新工具"
         }
     },
     "gui": {
+        "assets_man": {
+            "defaults_restore_error": "無法復原預設檔案！",
+            "defaults_restored": "成功復原預設檔案！",
+            "defaults_restoring": "正在復原預設檔案 \u2026",
+            "status": {
+                "save_error": "儲存失敗",
+                "saved": "儲存成功！",
+                "saving": "正在儲存 \u2026",
+                "unsaved_changes": "未儲存變更"
+            },
+            "win_title": "資產管理員"
+        },
         "attachments": "附加檔案",
         "attachments_open_dir": "開啟資料夾",
         "avg_close_to": "\ud83d\udcaa 越來越接近每日平均了！",
         "avg_not_reached": "\u270d\ud83c\udffc 持續寫作以超越每日平均",
         "avg_surpassed": "\ud83d\udd25 熱情大燃燒！",
         "avg_words": "日平均",
+        "chars": "%s 個字母",
+        "chart": {
+            "high_legend": "超過月平均值兩倍",
+            "high_mid_legend": "超過月平均值",
+            "low_mid_legend": "低於月平均值"
+        },
         "citeproc": {
             "error_db": "無法載入引用資料庫",
             "error_report_message": "您書庫中有 %s 個項目因發生錯誤而無法載入。請檢查下面的錯誤訊息以確定出問題的引用鍵值 (CiteKey) 和錯誤性質。",
@@ -414,6 +482,9 @@
             "references_none": "文件中不存在文獻引用",
             "reloading": "檢測到書庫檔更動，重新載入中 \u2026"
         },
+        "created": "建立日期",
+        "ctrl_click_to_open": "同時按下 Cmd/Ctrl+滑鼠左鍵來開啟 %s",
+        "date_just_now_label": "剛剛",
         "dirs": "資料夾",
         "display_search_results": "顯示搜尋結果",
         "empty_dir": "空的資料夾",
@@ -440,10 +511,46 @@
             "tasklist": "事件清單",
             "ul": "無序清單"
         },
+        "global_search": {
+            "clear_label": "清空搜尋欄",
+            "filter_label": "篩選搜尋結果",
+            "query_label": "輸入搜尋關鍵字",
+            "query_placeholder": "找看看 \u2026",
+            "restrict_dir_label": "搜尋特定資料夾",
+            "restrict_dir_placeholder": "限縮至資料夾 \u2026",
+            "search_label": "搜尋",
+            "title": "全文字搜尋",
+            "toggle_label": "開關詳細結果"
+        },
+        "modified": "已修改",
+        "months": {
+            "apr": "四月",
+            "aug": "八月",
+            "dec": "十二月",
+            "feb": "二月",
+            "jan": "一月",
+            "jul": "七月",
+            "jun": "六月",
+            "mar": "三月",
+            "may": "五月",
+            "nov": "十一月",
+            "oct": "十月",
+            "sep": "九月"
+        },
         "no_attachments": "附加檔案不存在",
         "no_dir_selected": "未選擇資料夾",
+        "no_open_document": "無開啟的文件",
+        "no_other_files": "無其他檔案",
+        "no_reference_message": "無引用文字",
+        "no_related_files": "無相關檔案",
         "no_search_results": "無結果",
         "number_selections": "%s 個選項",
+        "other_files": "其他檔案",
+        "preview_modification_date": "已修改",
+        "preview_searching_label": "搜尋檔案 \u2026",
+        "preview_word_count": "統計字數",
+        "related_files_label": "相關檔案",
+        "reset": "重設",
         "statistics_more": "更多數據",
         "table_of_contents": "目錄",
         "today_words": "今日字數",
@@ -460,6 +567,7 @@
         "about": "關於 Zettlr",
         "add_to_dictionary": "新增至字典",
         "all_front": "全部移到最上層",
+        "assets_manager": "資產管理員",
         "bold": "粗體",
         "clear_recent_docs": "清空最近開啟的檔案紀錄",
         "close_all_tabs": "關閉所有分頁",
@@ -481,6 +589,7 @@
         "donate": "贊助 Zettlr",
         "duplicate_file": "複製檔案",
         "export": "匯出\u2026",
+        "filter_files": "篩選檔案",
         "find_dir": "在資料夾中搜尋",
         "find_file": "在檔案中搜尋",
         "generate_id": "產生新 ID",
@@ -545,6 +654,8 @@
         "start_speaking": "開始朗讀",
         "stop_speaking": "結束朗讀",
         "tab_close": "關閉分頁",
+        "tab_close_all": "關閉所有分頁",
+        "tab_close_others": "關閉其他分頁",
         "tab_next": "下一個分頁",
         "tab_previous": "上一個分頁",
         "tags": "管理標籤\u2026",
@@ -577,6 +688,13 @@
     "system": {
         "all_files": "所有檔案",
         "cancel": "取消",
+        "common": {
+            "filter": "篩選 \u2026",
+            "list_actions_label": "行為",
+            "list_add_button": "新增",
+            "list_default_column_label": "物件",
+            "list_search_placeholder": "搜尋條目 \u2026"
+        },
         "directories": "資料夾",
         "directory_removed": "資料夾 %s 已被刪除",
         "error": {
@@ -598,7 +716,9 @@
             "fnf_title": "找不到檔案",
             "ignored_dir_message": "無法開啟資料夾 &quot;%s&quot;",
             "ignored_dir_title": "無法開啟資料夾",
-            "malformed_textbundle": "Textbundle格式錯誤：%s",
+            "image_not_found": "找不到圖片：%s",
+            "malformed_citekey": "引用條目格式異常：@%s",
+            "malformed_textbundle": "Textbundle 格式異常：%s",
             "move_into_child_message": "您無法將資料夾移動到其子資料夾",
             "move_into_child_title": "無法移動資料夾",
             "no_allowed_chars": "檔案名稱不包含任何允許的字母",
@@ -611,7 +731,8 @@
             "pandoc_error_message": "Pandoc 回報錯誤: %s",
             "pandoc_error_title": "無法匯出檔案",
             "remove_message": "您是否真的要移除 %s？",
-            "remove_title": "是否刪除？"
+            "remove_title": "是否刪除？",
+            "tray_not_supported": "不支援通知圖示。需安裝 Gnome 擴充元件 &quot;KStatusNotifierItem/AppIndicator Support&quot; 以在 Gnome 桌面下支援通知圖示"
         },
         "export_success": "匯出到 %s",
         "file_changed": "遠端檔案 %s 已變更",
@@ -670,7 +791,13 @@
         "show_toc": "顯示目錄",
         "stats": "檢視統計",
         "tag_cloud": "標籤",
-        "toggle_attachments": "檢視附加檔案"
+        "toggle_attachments": "檢視附加檔案",
+        "toggle_file_manager": "檔案管理原",
+        "toggle_global_search": "全域搜尋"
+    },
+    "tray": {
+        "show_zettlr": "顯示 Zettlr",
+        "tooltip": "Zettlr"
     },
     "validation": {
         "error_empty": "必須要有選項 %s",

@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2021-10-25T00:11:00.000000Z"
+        "updated_at": "2021-11-18T00:11:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -200,6 +200,7 @@
             "cite_style_label": "自動補完插入引用時的格式",
             "count_chars": "統計字數而不是詞數（例：中文）",
             "creationtime": "檔案建立時間",
+            "dark_mode": "暗色模式",
             "debug": "開啟除錯模式",
             "default_image_save_path": "預設的圖片路徑（相對路徑或絕對路徑）",
             "delete_on_fail": "無法移到資源回收桶時，直接不可逆的刪除檔案",

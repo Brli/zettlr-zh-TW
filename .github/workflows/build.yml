@@ -1,27 +1,23 @@
 name: Build
 
-on:
-  push:
-    branches:
-      - master
-
-# Defaults for every job and step in this workflow
-defaults:
-  run:
-    shell: bash # Run everything using bash
-
+on: push
 
 jobs:
   build:
     name: Build Arch Linux Package
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     container:
       image: archlinux:base-devel
       options: --privileged
       volumes:
         - /sys/fs/cgroup:/sys/fs/cgroup
+    outputs:
+      pkgver: ${{ steps.metadata.outputs.pkgver }}
+      pkgrel: ${{ steps.metadata.outputs.pkgrel }}
     steps:
-
       - name: Prepare Environment
         run: |
           useradd -m -U -s /bin/bash user -p user
@@ -34,47 +30,41 @@ jobs:
       # Check out master
       - name: Clone repository (master branch)
         uses: actions/checkout@v2
-        with:
-          ref: 'master'
 
-    - name: Build Arch Linux Package
-      run: |
-        chmod 777 ${PWD}
-        MAKEFLAGS="-j$(($(nproc)+1))" sudo -u user -EHn makepkg -sCf --noconfirm
+      - name: Build Arch Linux Package
+        id: metadata
+        run: |
+          chmod 777 ${PWD}
+          source ${PWD}/PKGBUILD
+          echo "::set-output name=pkgver::$pkgver"
+          echo "::set-output name=pkgrel::$pkgrel"
+          MAKEFLAGS="-j$(($(nproc)+1))" sudo -u user -EHn makepkg -sCf --noconfirm
 
       # Cache package
-      - name: Cache installers
+      - name: Cache package
         uses: actions/upload-artifact@v2
         with:
           path: |
             ./zettlr-*.zst
 
-
   prepare_release:
     name: Prepare release draft
     # Make sure (and wait until) the builds have succeeded
-    needs: [build]
+    needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Make release directory
-        run: mkdir ./release
-
-      - name: Retrieve Linux installers
+      - name: Retrieve cached package
         uses: actions/download-artifact@v2
         with:
-          path: ./release
-      # Now we are set, we have all five release assets on the VM. It's time to
-      # create the SHA-checksums file and then upload everything!
+          path: ./
       - name: Generate SHA256 checksums
         run: |
-          cd ./release
-          sha256sum "$(ls .)" > "SHA256SUMS.txt"
-          cd ..
+          sha256sum zettlr-${{needs.build.outputs.pkgver}}-${{needs.build.outputs.pkgrel}}-x86_64.pkg.tar.zst > "SHA256SUMS.txt"
+        working-directory: ./artifact
       - name: Verify checksums
         run: |
-          cd ./release
           sha256sum -c SHA256SUMS.txt
-          cd ..
+        working-directory: ./artifact
       - name: Create release draft
         uses: softprops/action-gh-release@v1
         env:
@@ -86,5 +76,5 @@ jobs:
           draft: true # Always create as draft, so that we can populate the remaining values easily
           # Gosh, is that convenient as opposed to earlier!
           files: |
-            ./release/zettlr*.zst
-            ./release/SHA256SUMS.txt
+            ./artifact/zettlr-${{needs.build.outputs.pkgver}}-${{needs.build.outputs.pkgrel}}-x86_64.pkg.tar.zst
+            ./artifact/SHA256SUMS.txt

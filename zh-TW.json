@@ -12,7 +12,7 @@
             "astrocite": "允許 Zettlr 從 BibTex 資料庫讀取引用資料",
             "chartjs": "以圖表顯示寫作統計資料",
             "chokidar": "偵測任何此程式外的檔案變更",
-            "citationstyle": "Zettlr 使用 citeproc 於編輯器中直接顯示引用。因此 Zettlr 使用 CitationStyleLanguage (引用樣式語言) 的程式與式樣檔案。這些檔案未經修改並與作者中繼資料一起發布。 更多資訊：",
+            "citationstyle": "Zettlr 使用 citeproc 於編輯器中直接顯示引用。因此 Zettlr 使用 CitationStyleLanguage (引用樣式語言) 的程式與式樣檔案。這些檔案未經修改並與作者中繼資料一起發布。 更多資訊\uff1a",
             "citeproc": "為所有作品提供正確的引用",
             "contributors": "貢獻者",
             "jquery": "便利的算繪整個使用者界面",
@@ -22,7 +22,7 @@
             "license": "授權協議",
             "main": "主要專案",
             "nspell": "讓 Zettlr 能自動校對拼字",
-            "other_projects": "Zettlr 同時也利用了以下專案：",
+            "other_projects": "Zettlr 同時也利用了以下專案\uff1a",
             "projects": "其他專案",
             "showdownjs": "顯示開發日誌，讓您能清楚了解到版本之間更新了什麼",
             "sponsors": "贊助商",
@@ -38,7 +38,7 @@
             "save": "儲存"
         },
         "custom_css": {
-            "info": "您可以在此客製化自己的 Zettlr 外觀主題 \u003Cstrong\u003E警告：這個檔案將取代所有的 CSS 指令！請勿改變元素的版型，否則可能會導致非預期的程式行為！\u003C/strong\u003E",
+            "info": "您可以在此客製化自己的 Zettlr 外觀主題 \u003Cstrong\u003E警告\uff1a這個檔案將取代所有的 CSS 指令\uff01請勿改變元素的版型，否則可能會導致非預期的程式行為\uff01\u003C/strong\u003E",
             "title": "自訂 CSS"
         },
         "defaults": {
@@ -58,12 +58,12 @@
             "message": "無法產生會話視窗 %s",
             "name": "Dialog Error",
             "no_data": "無法初始化會話視窗。原始數據為 %s",
-            "no_init": "會話視窗未初始化！",
+            "no_init": "會話視窗未初始化\uff01",
             "no_template": "找不到會話視窗的版型範例 '%s'",
             "unknown_dialog": "請求的會話視窗 '%s' 不存在"
         },
         "export": {
-            "no_pandoc": "找不到 pandoc 執行檔，請安裝 pandoc 以使用檔案匯出的功能！",
+            "no_pandoc": "找不到 pandoc 執行檔，請安裝 pandoc 以使用檔案匯出的功能\uff01",
             "no_xelatex": "找不到 xelatex 執行檔，請確認您的系統已安裝 LaTeX 以使用匯出成 PDF 的功能。"
         },
         "file_new": {
@@ -160,7 +160,7 @@
                 "sl-SL": "Slovenian",
                 "sr-SR": "Serbian",
                 "sv-SV": "Swedish",
-                "title": "程式顯示語系（\u003Cstrong\u003E需要重新啟動！\u003C/strong\u003E）",
+                "title": "程式顯示語系（\u003Cstrong\u003E需要重新啟動\uff01\u003C/strong\u003E）",
                 "tr-TR": "Turkish",
                 "uk-UK": "Ukrainian",
                 "ur-PK": "Urdu (Pakistan)",
@@ -201,7 +201,7 @@
                 "title": "引用來源"
             },
             "cite_style_label": "自動補完插入引用時的格式",
-            "count_chars": "統計字數而不是詞數（例：中文）",
+            "count_chars": "統計字數而不是詞數（例\uff1a中文）",
             "creationtime": "檔案建立時間",
             "dark_mode": "暗色模式",
             "dark_mode_schedule": {
@@ -240,9 +240,9 @@
             "enable_scroll_zoom": "按住 \u003Ckbd\u003ECmd\u003C/kbd\u003E or \u003Ckbd\u003ECtrl\u003C/kbd\u003E 並利用滑鼠捲動以縮放",
             "enable_table_helper": "啟用表格編輯器",
             "export": {
-                "dest": "匯出檔案的目標資料夾。 \u003Cem\u003E警告：\u003C/em\u003E選擇目前的工作資料夾將無預警的取代檔案！",
-                "dest_cwd_label": "目前工作資料夾：匯出檔案將儲存至目前選擇的資料夾中。",
-                "dest_temp_label": "暫存資料夾：將定期清除",
+                "dest": "匯出檔案的目標資料夾。 \u003Cem\u003E警告\uff1a\u003C/em\u003E選擇目前的工作資料夾將無預警的取代檔案\uff01",
+                "dest_cwd_label": "目前工作資料夾\uff1a匯出檔案將儲存至目前選擇的資料夾中。",
+                "dest_temp_label": "暫存資料夾\uff1a將定期清除",
                 "strip_id_label": "刪除檔案中的 ZKN ID",
                 "strip_links_full_label": "徹底刪除內部連結",
                 "strip_links_no_label": "不變更內部連結",
@@ -259,7 +259,7 @@
             "filemanager_thin": "縮減模式 &mdash; 只顯示檔案樹狀圖或檔案清單",
             "filename_display": {
                 "filename_only": "僅顯示檔案名稱",
-                "heading": "第一個一級標題 (<h1>, # 等)（如果檔案內有適用項目）",
+                "heading": "第一個一級標題 (\u003Ch1\u003E, \u0023 等)（如果檔案內有適用項目）",
                 "label": "以\u2026顯示檔案",
                 "title": "標題（如果檔案內有適用項目）",
                 "title_heading": "標題或第一個一級標題（如果檔案內有適用項目）"
@@ -269,7 +269,7 @@
             "general": "一般",
             "hide_dirs": "於全域搜尋中隱藏資料夾",
             "homeEndBehaviour": "按 CodeMirror 預設行為來使用 \u003Ckbd\u003EHome\u003C/kbd\u003E and \u003Ckbd\u003E 和 End\u003C/kbd\u003E。",
-            "indent_unit": "使用這個數目的空格來縮排：",
+            "indent_unit": "使用這個數目的空格來縮排\uff1a",
             "input_mode": "編輯器輸入模式",
             "leave_app_running_in_the_notification_area": "讓軟體在通知區域常駐",
             "modtime": "最後修改時間",
@@ -277,8 +277,8 @@
             "new_file_dont_prompt": "新增檔案時不詢問檔案名稱",
             "nightmode": "夜間模式",
             "pandoc": "pandoc 執行檔的路徑。請僅在 Zettlr 無法順利找到 pandoc 時更改。",
-            "pandoc_command": "Pandoc 指令。\u003Cstrong\u003E僅適用於進階使用者！\u003C/strong\u003E",
-            "pandoc_default": "預設：pandoc",
+            "pandoc_command": "Pandoc 指令。\u003Cstrong\u003E僅適用於進階使用者\uff01\u003C/strong\u003E",
+            "pandoc_default": "預設\uff1apandoc",
             "pdf": {
                 "author": "作者",
                 "author_label": "PDF 作者",
@@ -291,7 +291,7 @@
                 "keywords": "關鍵字",
                 "keywords_label": "PDF 關鍵字",
                 "lineheight": "行距",
-                "lineheight_label": "行距（相對於字體大小的百分比，即：150% 等於 1.5 行距）",
+                "lineheight_label": "行距（相對於字體大小的百分比，即\uff1a150% 等於 1.5 行距）",
                 "lmargin": "左邊距",
                 "lmargin_label": "左邊距",
                 "mainfont": "主要字型",
@@ -322,7 +322,7 @@
             },
             "project": {
                 "csl_style": "CSL 風格（非必要）",
-                "format": "匯出專案至：",
+                "format": "匯出專案至\uff1a",
                 "name_label": "格式",
                 "pattern": "新增全域規則以僅包含特定檔案",
                 "pattern_name": "全域規則",
@@ -336,10 +336,10 @@
             "sorting_ascii": "ASCII 排序（2在10之後）",
             "sorting_explanation": "檔案的排列順序（用於按名稱排序）",
             "sorting_natural": "自然排序（10在2之後）",
-            "sorting_time_explanation": "按時間排序時依據：",
+            "sorting_time_explanation": "按時間排序時依據\uff1a",
             "spellcheck": "選擇要啟用拼字校正的語言。",
             "spellcheck_search_placeholder": "搜尋詞典 &hellip;",
-            "spellcheck_warning": "\u003Cem\u003E警告：\u003C/em\u003E同時啟用太多詞庫可能大幅影響程式執行！儘量保持在三個以內 (1)",
+            "spellcheck_warning": "\u003Cem\u003E警告\uff1a\u003C/em\u003E同時啟用太多詞庫可能大幅影響程式執行\uff01儘量保持在三個以內 (1)",
             "spellchecking": {
                 "title": "拼寫校正"
             },
@@ -357,8 +357,8 @@
                 "downloading": "正在下載 %s",
                 "error": "無法下載 %s",
                 "not_available": "%s 無法取得",
-                "success": "成功下載翻譯：%s！",
-                "updated": "以下翻譯已更新：%s"
+                "success": "成功下載翻譯\uff1a%s\uff01",
+                "updated": "以下翻譯已更新\uff1a%s"
             },
             "use_native_appearance": "使用原生視窗外觀",
             "user_dictionary": "使用者造詞。點選單詞以移除之",
@@ -369,7 +369,7 @@
             "whitelist": "iFrame 白名單",
             "whitelist_hostname": "主機名稱",
             "xelatex": "xelatex 執行檔所在位置。請僅在 Zettlr 找不到時再修改。",
-            "xelatex_default": "預設值：xelatex",
+            "xelatex_default": "預設值\uff1axelatex",
             "zkn": {
                 "auto_create_file": "追蹤內部連結時自動建立不存在的檔案",
                 "auto_search": "當追蹤 Zettelkasten 連結時開啟搜尋",
@@ -385,7 +385,7 @@
                 "linkend_label": "連結結束",
                 "linkstart_label": "連結開始",
                 "pass_check_no": "您的正則表達式與產生的 ID 不符",
-                "pass_check_yes": "產生的 ID 能被正則表達式辨識！",
+                "pass_check_yes": "產生的 ID 能被正則表達式辨識\uff01",
                 "reset_default_generator": "重設 ID 產生器",
                 "reset_default_id": "重設 ID 表達式",
                 "reset_default_linkend": "結束重設連結",
@@ -446,33 +446,33 @@
             "words": "字數"
         },
         "update": {
-            "client_error": "無法檢查更新：客戶端錯誤（錯誤碼：%s）",
-            "connection_error": "無法檢查更新：無法建立連線",
+            "client_error": "無法檢查更新\uff1a客戶端錯誤（錯誤碼\uff1a%s）",
+            "connection_error": "無法檢查更新\uff1a無法建立連線",
             "current_version": "目前版本",
             "download_progress_label": "正在下載更新",
-            "new_update_available": "新版號 %s 已上線！",
-            "no_data": "無法檢查更新：伺服器未發送任何數據",
+            "new_update_available": "新版號 %s 已上線\uff01",
+            "no_data": "無法檢查更新\uff1a伺服器未發送任何數據",
             "no_new_update": "尚無更新，您的版本是最新的。",
             "notification": "已有新版 Zettlr。請閱讀以下的開發日誌。",
             "other_error": "無法檢查更新 %s: %s",
-            "redirect_error": "無法檢查更新：伺服器嘗試重定向（錯誤碼：%s）",
+            "redirect_error": "無法檢查更新\uff1a伺服器嘗試重定向（錯誤碼\uff1a%s）",
             "release_url": "前往下載頁面",
-            "server_error": "無法檢查更新：伺服器錯誤（狀態代碼：%s）",
+            "server_error": "無法檢查更新\uff1a伺服器錯誤（狀態代碼\uff1a%s）",
             "start_update_label": "按此開始更新",
             "start_update_message": "正在開始更新 \u2026",
             "title": "已有可用更新",
-            "transmission_error": "無法檢查更新：連線中斷",
+            "transmission_error": "無法檢查更新\uff1a連線中斷",
             "window_title": "更新工具"
         }
     },
     "gui": {
         "assets_man": {
-            "defaults_restore_error": "無法復原預設檔案！",
-            "defaults_restored": "成功復原預設檔案！",
+            "defaults_restore_error": "無法復原預設檔案\uff01",
+            "defaults_restored": "成功復原預設檔案\uff01",
             "defaults_restoring": "正在復原預設檔案 \u2026",
             "status": {
                 "save_error": "儲存失敗",
-                "saved": "儲存成功！",
+                "saved": "儲存成功\uff01",
                 "saving": "正在儲存 \u2026",
                 "unsaved_changes": "未儲存變更"
             },
@@ -480,9 +480,9 @@
         },
         "attachments": "附加檔案",
         "attachments_open_dir": "開啟資料夾",
-        "avg_close_to": "\ud83d\udcaa 越來越接近每日平均了！",
+        "avg_close_to": "\ud83d\udcaa 越來越接近每日平均了\uff01",
         "avg_not_reached": "\u270d\ud83c\udffc 持續寫作以超越每日平均",
-        "avg_surpassed": "\ud83d\udd25 熱情大燃燒！",
+        "avg_surpassed": "\ud83d\udd25 熱情大燃燒\uff01",
         "avg_words": "日平均",
         "chars": "%s 個字母",
         "chart": {
@@ -496,7 +496,7 @@
             "error_report_title": "載入引用資料庫時發生錯誤",
             "no_db": "沒有載入任何書庫。",
             "references_booting": "正在啟動 citeproc 引擎 \u2026",
-            "references_error": "無法更新參考書目！",
+            "references_error": "無法更新參考書目\uff01",
             "references_heading": "參考文獻",
             "references_none": "文件中不存在文獻引用",
             "reloading": "檢測到書庫檔更動，重新載入中 \u2026"
@@ -728,7 +728,7 @@
             "delete_root_message": "您無法刪除根目錄。",
             "dnf_message": "找不到要求的資料夾。",
             "dnf_title": "找不到資料夾",
-            "export_error_message": "匯出錯誤：%s",
+            "export_error_message": "匯出錯誤\uff1a%s",
             "export_error_title": "匯出失敗",
             "export_temp_file": "無法移除臨時檔案 &quot;%s&quot; 請手動移除",
             "file_exists": "檔案已經存在",
@@ -736,9 +736,9 @@
             "fnf_title": "找不到檔案",
             "ignored_dir_message": "無法開啟資料夾 &quot;%s&quot;",
             "ignored_dir_title": "無法開啟資料夾",
-            "image_not_found": "找不到圖片：%s",
-            "malformed_citekey": "引用條目格式異常：@%s",
-            "malformed_textbundle": "Textbundle 格式異常：%s",
+            "image_not_found": "找不到圖片\uff1a%s",
+            "malformed_citekey": "引用條目格式異常\uff1a@%s",
+            "malformed_textbundle": "Textbundle 格式異常\uff1a%s",
             "move_into_child_message": "您無法將資料夾移動到其子資料夾",
             "move_into_child_title": "無法移動資料夾",
             "no_allowed_chars": "檔案名稱不包含任何允許的字母",
@@ -759,14 +759,14 @@
         "file_removed": "已移除 %s",
         "files": "檔案",
         "import_error": "無法匯入 %s",
-        "import_fail": "無法匯入 %s ，未知的檔案類型： %s",
+        "import_fail": "無法匯入 %s ，未知的檔案類型\uff1a %s",
         "import_lang_file": "匯入新的翻譯檔",
         "import_no_directory": "您必須選擇要匯入的資料夾",
         "import_status": "匯入中，請稍候 \u2026",
         "import_success": "成功匯入 %s",
-        "lang_import_error": "無法匯入語系檔 %s！",
+        "lang_import_error": "無法匯入語系檔 %s\uff01",
         "lang_import_success": "已匯入語系檔 %s",
-        "no_command": "收到不包含任何指令的訊息：%s",
+        "no_command": "收到不包含任何指令的訊息\uff1a%s",
         "ok": "OK",
         "open_file": "開啟檔案",
         "open_folder": "開啟專案資料夾",
@@ -783,7 +783,7 @@
         "save_changes_save": "儲存",
         "save_changes_select_dir": "請選擇資料夾以儲存新的檔案。",
         "save_changes_title": "忽略未儲存修改?",
-        "unknown_command": "收到未知指令：%s"
+        "unknown_command": "收到未知指令\uff1a%s"
     },
     "toolbar": {
         "dir_new": "新增資料夾",
@@ -825,6 +825,6 @@
         "error_range_max": "選項 %s 不得超過 %s 字元",
         "error_range_min": "選項 %s 的字元長度必須至少為 %s",
         "error_type": "選項 %s 必須是 %s 型別",
-        "error_value": "選項 %s 必須是以下之一：%s"
+        "error_value": "選項 %s 必須是以下之一\uff1a%s"
     }
 }

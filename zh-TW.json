@@ -197,14 +197,22 @@
             "checkForBeta": "提醒我 Beta 版的更新",
             "choose_file": "選擇檔案 \u2026",
             "citation_database": "引用來源資料庫（CSL JSON 或 BibTex）",
+            "citations": {
+                "title": "引用來源"
+            },
             "cite_style_label": "自動補完插入引用時的格式",
             "count_chars": "統計字數而不是詞數（例：中文）",
             "creationtime": "檔案建立時間",
             "dark_mode": "暗色模式",
+            "dark_mode_schedule": {
+                "end": "於下列時間結束暗色模式",
+                "start": "於下列時間開始暗色模式"
+            },
             "debug": "開啟除錯模式",
             "default_image_save_path": "預設的圖片路徑（相對路徑或絕對路徑）",
             "delete_on_fail": "無法移到資源回收桶時，直接不可逆的刪除檔案",
             "display": {
+                "hide_toolbar_distraction_free": "在專注模式下隱藏工具列",
                 "image_height": "最大高度（百分比）",
                 "image_size_info": "透過操作下方捲軸設定預覽圖的大小",
                 "image_width": "最大寬度（百分比）",
@@ -219,6 +227,7 @@
                 "title": "檢視",
                 "use_first_headings": "若存在，使用第一級標題而非檔名作為視窗標題"
             },
+            "display_markdown_file_extensions": "顯示 Markdown 檔案的副檔名",
             "display_time_explanation": "在檔案中顯示中繼資料",
             "editor": "編輯器",
             "editor_font_size": "編輯器字型大小",
@@ -248,6 +257,13 @@
             "filemanager_expanded": "擴充模式 &mdash; 同時顯示檔案樹狀圖與檔案清單",
             "filemanager_explanation": "檔案總管模式",
             "filemanager_thin": "縮減模式 &mdash; 只顯示檔案樹狀圖或檔案清單",
+            "filename_display": {
+                "filename_only": "僅顯示檔案名稱",
+                "heading": "第一個一級標題 (<h1>, # 等)（如果檔案內有適用項目）",
+                "label": "以\u2026顯示檔案",
+                "title": "標題（如果檔案內有適用項目）",
+                "title_heading": "標題或第一個一級標題（如果檔案內有適用項目）"
+            },
             "filename_generator": "建立新檔的命名原則",
             "formatting_characters_explanation": "選擇粗體與斜體的強調字元",
             "general": "一般",
@@ -316,6 +332,7 @@
             "readability_algorithm": "閱讀輔助器使用的演算法",
             "reset_pandoc_command": "重設 pandoc 指令",
             "show_app_in_the_notification_area": "在通知區域中顯示",
+            "sort_folders_first": "排序時資料夾先於檔案",
             "sorting_ascii": "ASCII 排序（2在10之後）",
             "sorting_explanation": "檔案的排列順序（用於按名稱排序）",
             "sorting_natural": "自然排序（10在2之後）",
@@ -356,6 +373,7 @@
             "zkn": {
                 "auto_create_file": "追蹤內部連結時自動建立不存在的檔案",
                 "auto_search": "當追蹤 Zettelkasten 連結時開啟搜尋",
+                "custom_directory": "將程式自動產生的檔案放在本資料夾（必須被 Zettlr 讀取）",
                 "generated_id": "產生 ID",
                 "id_generator_label": "用於產生新 ID 的模式",
                 "id_label": "ID 的正則表達式",
@@ -576,6 +594,7 @@
         "close_file": "關閉檔案",
         "close_workspace": "關閉 Workspace",
         "copy": "複製",
+        "copy_equation": "複製等式的原始 Latex 碼",
         "copy_filename": "複製檔案名稱",
         "copy_html": "以 HTML 模式複製",
         "copy_id": "複製 ID",

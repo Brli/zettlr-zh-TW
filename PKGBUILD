@@ -1,7 +1,7 @@
 # Maintainer: BrLi <brli at chakralinux dot org>
 # Maintainer: Caleb Maclennan <caleb@alerque.com>
 
-pkgname=zettlr
+pkgname=zettlr-tw
 pkgver=2.1.3
 pkgrel=1
 pkgdesc="A markdown editor for writing academic texts and taking notes"
@@ -12,6 +12,8 @@ depends=(electron pandoc texlive-bin ttf-lato)
 makedepends=(git yarn nodejs-lts-gallium) # check .github/workflows/build.yml for NODE_VERSION
 _csl_locale_commit=c38205618f1a23eb80e8c5f33c8086648ca3874b # Dec 23, 2021
 _csl_style_commit=ccb71844fdafb2b7a48cccb364f4b4c03d3cdce6  # Sep 19, 2021
+provides=(zettlr)
+conflicts=(zettlr)
 options=(!strip)
 source=(git+https://github.com/Zettlr/Zettlr#tag=v${pkgver}
         git+https://github.com/Brli/zettlr-zh-TW.git
@@ -32,7 +34,6 @@ prepare() {
     cp ${srcdir}/zettlr-zh-TW/zh-TW.json lang/
 
     cd "${srcdir}/Zettlr"
-    # Use pacman mechanism to download pandoc binary instead of using upstream script
     patch -Np1 -i $srcdir/0002-Do-not-download-pandoc.patch
     ln -sf /usr/bin/pandoc resources/pandoc-linux-x64
     ln -sf /usr/bin/pandoc resources/pandoc

@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2022-02-07T02:05:00.000000Z"
+        "updated_at": "2022-02-14T01:10:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -219,6 +219,7 @@
                 "image_width": "最大寬度（百分比）",
                 "preview_info": "勾選以下選項決定哪些元素將在文件內被顯示",
                 "render_citations": "顯示引用段落",
+                "render_emphasis": "顯示重點強調段落",
                 "render_htags": "隱藏標題控制字元(#)",
                 "render_iframes": "顯示內置框架(Iframe)",
                 "render_images": "顯示圖片",
@@ -784,6 +785,7 @@
         "save_changes_save": "儲存",
         "save_changes_select_dir": "請選擇資料夾以儲存新的檔案。",
         "save_changes_title": "忽略未儲存修改?",
+        "save_file": "儲存檔案",
         "unknown_command": "收到未知指令\uff1a%s"
     },
     "toolbar": {

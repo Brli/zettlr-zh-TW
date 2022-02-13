@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2022-02-14T01:10:00.000000Z"
+        "updated_at": "2022-02-14T01:30:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -347,7 +347,7 @@
             },
             "theme": {
                 "accent_color_info": "本設定僅適用於視窗與麥金塔作業系統",
-                "accent_color_label": "Use the operating system's accent color instead of the theme color",
+                "accent_color_label": "使用系統的顏色搭配而不是主題的",
                 "info": "在此選擇應用程式的佈景主題",
                 "select_label": "點選",
                 "selected_label": "已選取",
@@ -754,7 +754,7 @@
             "pandoc_error_title": "無法匯出檔案",
             "remove_message": "您是否真的要移除 %s？",
             "remove_title": "是否刪除？",
-            "tray_not_supported": "不支援通知圖示。需安裝 Gnome 擴充元件 &quot;KStatusNotifierItem/AppIndicator Support&quot; 以在 Gnome 桌面下支援通知圖示"
+            "tray_not_supported": "不支援系統匣小圖示。需安裝 Gnome 擴充元件 &quot;KStatusNotifierItem/AppIndicator Support&quot; 以在 Gnome 桌面下支援系統匣小圖示"
         },
         "export_success": "匯出到 %s",
         "file_changed": "遠端檔案 %s 已變更",

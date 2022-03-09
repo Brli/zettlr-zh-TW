@@ -2,7 +2,7 @@
 # Maintainer: Caleb Maclennan <caleb@alerque.com>
 
 pkgname=zettlr-tw
-pkgver=2.2.1
+pkgver=2.2.4
 pkgrel=1
 pkgdesc="A markdown editor for writing academic texts and taking notes"
 arch=('x86_64')

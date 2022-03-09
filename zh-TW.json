@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2022-02-14T01:30:00.000000Z"
+        "updated_at": "2022-03-09T10:45:00.000000Z"
     },
     "dialog": {
         "about": {
@@ -272,6 +272,7 @@
             "hide_dirs": "於全域搜尋中隱藏資料夾",
             "homeEndBehaviour": "按 CodeMirror 預設行為來使用 \u003Ckbd\u003EHome\u003C/kbd\u003E and \u003Ckbd\u003E 和 End\u003C/kbd\u003E。",
             "indent_unit": "使用這個數目的空格來縮排\uff1a",
+            "indent_with_tabs": "使用 Tab 縮排",
             "input_mode": "編輯器輸入模式",
             "leave_app_running_in_the_notification_area": "讓軟體在通知區域常駐",
             "modtime": "最後修改時間",
@@ -403,6 +404,11 @@
                 "var_week_number": "當年的周數（前綴補零）",
                 "var_year": "年 (YYYY 四位數字)",
                 "var_year_two": "年 (YY 西元末兩位)"
+            },
+            "zoom_behavior": {
+                "editor": "僅改變字體大小",
+                "gui": "縮放整個程式的界面",
+                "label": "縮放行為"
             }
         },
         "snippets": {

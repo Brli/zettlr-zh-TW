@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2022-03-09T10:45:00.000000Z"
+        "updated_at": "2022-06-05T12:19:59.000000Z"
     },
     "dialog": {
         "about": {
@@ -194,7 +194,8 @@
                 "title": "自動校正"
             },
             "avoid_new_tabs": "避免將檔案開啟至新分頁",
-            "checkForBeta": "提醒我 Beta 版的更新",
+            "checkForBeta": "提醒我測試版的更新",
+            "check_translation_updates": "程式啟動後檢查語系翻譯是否有更新",
             "check_updates": "自動檢查更新",
             "choose_file": "選擇檔案 \u2026",
             "citation_database": "引用來源資料庫（CSL JSON 或 BibTex）",
@@ -355,6 +356,22 @@
                 "title": "佈景主題"
             },
             "title": "偏好設定",
+            "toolbar": {
+                "showDocumentInfoText": "顯示文件資訊",
+                "showInsertFootnoteButton": "顯示「插入腳註」",
+                "showInsertTableButton": "顯示「插入表格」",
+                "showMarkdownCommentButton": "顯示「插入註記」",
+                "showMarkdownImageButton": "顯示圖片",
+                "showMarkdownLinkButton": "顯示超連結",
+                "showMarkdownMakeTaskListButton": "顯示事件清單",
+                "showNewFileButton": "顯示「新增檔案」",
+                "showNextFileButton": "顯示「下一個檔案」",
+                "showOpenPreferencesButton": "顯示「開啟設定視窗」",
+                "showPomodoroButton": "顯示蕃茄鐘",
+                "showPreviousFileButton": "顯示「上一個檔案」",
+                "showToggleReadabilityButton": "顯示「啟用閱讀輔助」",
+                "title": "Toolbar"
+            },
             "translations": {
                 "download": "點選下載",
                 "downloading": "正在下載 %s",
@@ -602,6 +619,7 @@
         "close_file": "關閉檔案",
         "close_workspace": "關閉 Workspace",
         "copy": "複製",
+        "copy_abs_path": "複製完整路徑",
         "copy_equation": "複製等式的原始 Latex 碼",
         "copy_filename": "複製檔案名稱",
         "copy_html": "以 HTML 模式複製",
@@ -645,6 +663,7 @@
         "new_dir": "新增資料夾\u2026",
         "new_file": "新增檔案\u2026",
         "new_project": "新增專案",
+        "next_file": "下一個檔案",
         "no_suggestions": "無意見",
         "open": "開啟\u2026",
         "open_attachment": "開啟附加檔案",
@@ -658,6 +677,7 @@
         "paste_plain": "以純文字貼上",
         "pdf_preferences": "PDF 相關設定\u2026",
         "preferences": "設定",
+        "previous_file": "上一個檔案",
         "print": "列印\u2026",
         "project_build": "輸出專案",
         "project_properties": "專案設定\u2026",
@@ -821,7 +841,7 @@
         "stats": "檢視統計",
         "tag_cloud": "標籤",
         "toggle_attachments": "檢視附加檔案",
-        "toggle_file_manager": "檔案管理原",
+        "toggle_file_manager": "檔案管理員",
         "toggle_global_search": "全域搜尋"
     },
     "tray": {

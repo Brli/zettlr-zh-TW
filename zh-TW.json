@@ -5,7 +5,7 @@
             "xatier <xatierlike@gmail.com>"
         ],
         "license": "GNU GPL v2",
-        "updated_at": "2022-06-05T12:19:59.000000Z"
+        "updated_at": "2022-09-08T14:07:10.000000Z"
     },
     "dialog": {
         "about": {
@@ -45,7 +45,9 @@
             "explanation": "在此處編輯匯入/匯出的預設設定",
             "exporting_title": "匯出",
             "importing_title": "匯入",
-            "restore": "復原成初始設定"
+            "invalid_warning": "本設定檔似乎缺少 writer: 或 reader: 的屬性。為了確保 Zettlr 能使用本設定檔，請再度確認相關屬性已經設定完成。",
+            "protected_warning": "此為受保護之設定檔。當您移除或重新命名本設定檔時，相關設定會自動復原。",
+            "restore": "復原成程式預設值"
         },
         "dir_new": {
             "placeholder": "資料夾名稱",
@@ -244,6 +246,7 @@
             "enable_table_helper": "啟用表格編輯器",
             "export": {
                 "dest": "匯出檔案的目標資料夾。 \u003Cem\u003E警告\uff1a\u003C/em\u003E選擇目前的工作資料夾將無預警的取代檔案\uff01",
+                "dest_ask_label": "詢問目標資料夾",
                 "dest_cwd_label": "目前工作資料夾\uff1a匯出檔案將儲存至目前選擇的資料夾中。",
                 "dest_temp_label": "暫存資料夾\uff1a將定期清除",
                 "strip_id_label": "刪除檔案中的 ZKN ID",
@@ -676,6 +679,7 @@
         "paste": "貼上",
         "paste_plain": "以純文字貼上",
         "pdf_preferences": "PDF 相關設定\u2026",
+        "pin_tab": "釘選分頁",
         "preferences": "設定",
         "previous_file": "上一個檔案",
         "print": "列印\u2026",
@@ -717,6 +721,7 @@
         "toggle_typewriter_mode": "打字機模式",
         "undo": "復原",
         "unhide": "顯示",
+        "unpin_tab": "取消釘選分頁",
         "update": "檢查更新",
         "win_close": "關閉視窗",
         "win_minimize": "最小化",
@@ -781,6 +786,10 @@
             "remove_message": "您是否真的要移除 %s？",
             "remove_title": "是否刪除？",
             "tray_not_supported": "不支援系統匣小圖示。需安裝 Gnome 擴充元件 &quot;KStatusNotifierItem/AppIndicator Support&quot; 以在 Gnome 桌面下支援系統匣小圖示"
+        },
+        "export_dialog": {
+            "save": "儲存",
+            "title": "選擇會出目的地"
         },
         "export_success": "匯出到 %s",
         "file_changed": "遠端檔案 %s 已變更",
